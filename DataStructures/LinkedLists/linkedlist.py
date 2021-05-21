@@ -20,6 +20,12 @@ class LinkedList:
         n = n.next
       n.next = node
       listSize += 1
+  
+  def printList(self):
+    node = self.head
+    while(node != None):
+      print(node.data, sep=" ")
+      node = node.next
       
   def getSize(self):
     return self.listSize
